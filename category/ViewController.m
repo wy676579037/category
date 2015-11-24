@@ -8,12 +8,15 @@
 
 #import "ViewController.h"
 #import "UIButton+Block.h"
+#import "UIImageView+Block.h"
 
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *touchDownActionBlockBtn;
 
 @property (weak, nonatomic) IBOutlet UIButton *touchUpInsideActionBlock;
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 
@@ -30,6 +33,9 @@
         NSLog(@"addTouchUpInsideActionBlock");
     }];
     
+    [self.imageView addActionBolck:^(UIImageView *imageView) {
+        NSLog(@"UIImageView Block");
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

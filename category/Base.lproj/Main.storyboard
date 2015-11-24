@@ -18,16 +18,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2f-g5-r47">
-                                <rect key="frame" x="79" y="40" width="163" height="30"/>
-                                <state key="normal" title="TouchDownActionBlock"/>
+                                <rect key="frame" x="46" y="40" width="229" height="30"/>
+                                <state key="normal" title="UIButton_TouchDownActionBlock"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCN-SK-ytf">
-                                <rect key="frame" x="69" y="74" width="184" height="30"/>
-                                <state key="normal" title="TouchUpInsideActionBlock"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCN-SK-ytf">
+                                <rect key="frame" x="35" y="74" width="250" height="30"/>
+                                <state key="normal" title="UIButton_TouchUpInsideActionBlock"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default" translatesAutoresizingMaskIntoConstraints="NO" id="PQ2-D4-yDf">
+                                <rect key="frame" x="40" y="112" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="CYf-YQ-94n"/>
+                                    <constraint firstAttribute="width" constant="240" id="xYp-lN-NTu"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="PQ2-D4-yDf" firstAttribute="top" secondItem="BCN-SK-ytf" secondAttribute="bottom" constant="8" id="BKf-GS-LsU"/>
+                            <constraint firstItem="PQ2-D4-yDf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DA5-WA-Nmk"/>
                             <constraint firstItem="W2f-g5-r47" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="fhV-fm-n34"/>
                             <constraint firstItem="BCN-SK-ytf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lBZ-8M-Zim"/>
                             <constraint firstItem="W2f-g5-r47" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ls1-xp-Pfv"/>
@@ -36,6 +45,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="imageView" destination="PQ2-D4-yDf" id="u2w-Iv-ykF"/>
                         <outlet property="touchDownActionBlockBtn" destination="W2f-g5-r47" id="dGG-o0-GML"/>
                         <outlet property="touchUpInsideActionBlock" destination="BCN-SK-ytf" id="8q1-Ox-S3D"/>
                     </connections>
@@ -45,4 +55,7 @@
             <point key="canvasLocation" x="229" y="263"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Default" width="640" height="960"/>
+    </resources>
 </document>

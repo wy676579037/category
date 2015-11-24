@@ -16,6 +16,7 @@
 		16B08D451C049284008319B1 /* categoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B08D441C049284008319B1 /* categoryTests.m */; };
 		16B08D501C049284008319B1 /* categoryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B08D4F1C049284008319B1 /* categoryUITests.m */; };
 		16B08D601C0492CA008319B1 /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B08D5F1C0492CA008319B1 /* UIButton+Block.m */; };
+		16B08D661C049BFC008319B1 /* UIImageView+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B08D651C049BFC008319B1 /* UIImageView+Block.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		16B08D511C049284008319B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16B08D5E1C0492CA008319B1 /* UIButton+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Block.h"; sourceTree = "<group>"; };
 		16B08D5F1C0492CA008319B1 /* UIButton+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Block.m"; sourceTree = "<group>"; };
+		16B08D641C049BFC008319B1 /* UIImageView+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Block.h"; sourceTree = "<group>"; };
+		16B08D651C049BFC008319B1 /* UIImageView+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Block.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +152,8 @@
 			children = (
 				16B08D5E1C0492CA008319B1 /* UIButton+Block.h */,
 				16B08D5F1C0492CA008319B1 /* UIButton+Block.m */,
+				16B08D641C049BFC008319B1 /* UIImageView+Block.h */,
+				16B08D651C049BFC008319B1 /* UIImageView+Block.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -283,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16B08D661C049BFC008319B1 /* UIImageView+Block.m in Sources */,
 				16B08D321C049284008319B1 /* ViewController.m in Sources */,
 				16B08D2F1C049284008319B1 /* AppDelegate.m in Sources */,
 				16B08D2C1C049284008319B1 /* main.m in Sources */,
@@ -510,6 +516,7 @@
 				16B08D561C049284008319B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		16B08D571C049284008319B1 /* Build configuration list for PBXNativeTarget "categoryTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +525,7 @@
 				16B08D591C049284008319B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		16B08D5A1C049284008319B1 /* Build configuration list for PBXNativeTarget "categoryUITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +534,7 @@
 				16B08D5C1C049284008319B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
