@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2f-g5-r47">
+                                <rect key="frame" x="79" y="40" width="163" height="30"/>
+                                <state key="normal" title="TouchDownActionBlock"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCN-SK-ytf">
+                                <rect key="frame" x="69" y="74" width="184" height="30"/>
+                                <state key="normal" title="TouchUpInsideActionBlock"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="W2f-g5-r47" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="fhV-fm-n34"/>
+                            <constraint firstItem="BCN-SK-ytf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lBZ-8M-Zim"/>
+                            <constraint firstItem="W2f-g5-r47" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ls1-xp-Pfv"/>
+                            <constraint firstItem="BCN-SK-ytf" firstAttribute="top" secondItem="W2f-g5-r47" secondAttribute="bottom" constant="4" id="pFJ-PB-4XU"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="touchDownActionBlockBtn" destination="W2f-g5-r47" id="dGG-o0-GML"/>
+                        <outlet property="touchUpInsideActionBlock" destination="BCN-SK-ytf" id="8q1-Ox-S3D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="229" y="263"/>
+        </scene>
+    </scenes>
+</document>
