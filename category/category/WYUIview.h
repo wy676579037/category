@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WYUIview : UIView
+IB_DESIGNABLE @interface WYUIview : UIView
 
 @property (nonatomic,strong) UIView *bottomLineView;
 
