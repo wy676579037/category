@@ -18,6 +18,12 @@ IB_DESIGNABLE @interface WYUIview : UIView
 
 @property (nonatomic,strong) UIView *rightLineView;
 
+@property (assign, nonatomic) IBInspectable CGFloat topBoard;
+
+@property (nonatomic,strong ) IBInspectable UIColor *topColor;
+
+@property (assign, nonatomic) IBInspectable CGFloat topPadding;
+
 
 @property (assign, nonatomic) IBInspectable CGFloat bottomBoard;
 
@@ -25,17 +31,13 @@ IB_DESIGNABLE @interface WYUIview : UIView
 
 @property (assign, nonatomic) IBInspectable CGFloat bottomPadding;
 
-@property (assign, nonatomic) IBInspectable CGFloat topBoard;
-
-@property (nonatomic,strong ) IBInspectable UIColor *topColor;
-
-@property (assign, nonatomic) IBInspectable CGFloat topPadding;
 
 @property (assign, nonatomic) IBInspectable CGFloat leftBoard;
 
 @property (nonatomic,strong ) IBInspectable UIColor *leftColor;
 
 @property (assign, nonatomic) IBInspectable CGFloat leftPadding;
+
 
 @property (assign, nonatomic) IBInspectable CGFloat rightBoard;
 

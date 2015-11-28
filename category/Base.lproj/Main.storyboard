@@ -63,7 +63,7 @@
                                         <color key="value" red="1" green="0.84296392990000002" blue="0.28167996940000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="topBoard">
-                                        <real key="value" value="0.0"/>
+                                        <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="topColor">
                                         <color key="value" red="0.086274509799999996" green="0.54901960780000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>

@@ -8,7 +8,6 @@
 
 #import "WYUIview.h"
 #import <QuartzCore/QuartzCore.h>
-#import "UIView+Extension.h"
 
 @implementation WYUIview
 
@@ -20,13 +19,15 @@
 }
 
 -(void)setLineView{
+    CGFloat width = self.bounds.size.width;
+    CGFloat height = self.bounds.size.height;
     
     if (self.bottomBoard) {
         if (!self.bottomLineView) {
             self.bottomLineView         = [UIView new];
             [self addSubview:self.bottomLineView];
         }
-        self.bottomLineView.frame = CGRectMake(self.bottomPadding, self.height-self.bottomBoard, self.width-self.bottomPadding*2, self.bottomBoard);
+        self.bottomLineView.frame = CGRectMake(self.bottomPadding, height-self.bottomBoard, width-self.bottomPadding*2, self.bottomBoard);
         
         if (self.bottomColor) {
             self.bottomLineView.backgroundColor = self.bottomColor;
@@ -40,7 +41,7 @@
             self.topLineView         = [UIView new];
             [self addSubview:self.topLineView];
         }
-        self.topLineView.frame = CGRectMake(self.topPadding, 0, self.width-self.topPadding*2, self.topBoard);
+        self.topLineView.frame = CGRectMake(self.topPadding, 0, width-self.topPadding*2, self.topBoard);
         
         if (self.topColor) {
             self.topLineView.backgroundColor = self.topColor;
@@ -54,7 +55,7 @@
             self.leftLineView         = [UIView new];
             [self addSubview:self.leftLineView];
         }
-        self.leftLineView.frame = CGRectMake(0, self.leftPadding, self.leftBoard, self.height-self.leftPadding*2);
+        self.leftLineView.frame = CGRectMake(0, self.leftPadding, self.leftBoard, height-self.leftPadding*2);
         
         if (self.leftColor) {
             self.leftLineView.backgroundColor = self.leftColor;
@@ -68,7 +69,7 @@
             self.rightLineView         = [UIView new];
             [self addSubview:self.rightLineView];
         }
-        self.rightLineView.frame = CGRectMake(self.width-self.rightBoard, self.rightPadding, self.rightBoard, self.height-self.rightPadding*2);
+        self.rightLineView.frame = CGRectMake(width-self.rightBoard, self.rightPadding, self.rightBoard, height-self.rightPadding*2);
         
         if (self.rightColor) {
             self.rightLineView.backgroundColor = self.rightColor;
