@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1662DCAA1C0998D900FB6007 /* WYUIview.m in Sources */ = {isa = PBXBuildFile; fileRef = 1662DCA91C0998D900FB6007 /* WYUIview.m */; };
+		1662DCAD1C099B4300FB6007 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1662DCAC1C099B4300FB6007 /* UIView+Extension.m */; };
 		16B08D2C1C049284008319B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B08D2B1C049284008319B1 /* main.m */; };
 		16B08D2F1C049284008319B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B08D2E1C049284008319B1 /* AppDelegate.m */; };
 		16B08D321C049284008319B1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B08D311C049284008319B1 /* ViewController.m */; };
@@ -37,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1662DCA81C0998D900FB6007 /* WYUIview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYUIview.h; sourceTree = "<group>"; };
+		1662DCA91C0998D900FB6007 /* WYUIview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYUIview.m; sourceTree = "<group>"; };
+		1662DCAB1C099B4300FB6007 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		1662DCAC1C099B4300FB6007 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		16B08D271C049284008319B1 /* category.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = category.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B08D2B1C049284008319B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		16B08D2D1C049284008319B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -150,10 +156,14 @@
 		16B08D5D1C0492A5008319B1 /* category */ = {
 			isa = PBXGroup;
 			children = (
+				1662DCAB1C099B4300FB6007 /* UIView+Extension.h */,
+				1662DCAC1C099B4300FB6007 /* UIView+Extension.m */,
 				16B08D5E1C0492CA008319B1 /* UIButton+Block.h */,
 				16B08D5F1C0492CA008319B1 /* UIButton+Block.m */,
 				16B08D641C049BFC008319B1 /* UIImageView+Block.h */,
 				16B08D651C049BFC008319B1 /* UIImageView+Block.m */,
+				1662DCA81C0998D900FB6007 /* WYUIview.h */,
+				1662DCA91C0998D900FB6007 /* WYUIview.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -290,6 +300,8 @@
 			files = (
 				16B08D661C049BFC008319B1 /* UIImageView+Block.m in Sources */,
 				16B08D321C049284008319B1 /* ViewController.m in Sources */,
+				1662DCAA1C0998D900FB6007 /* WYUIview.m in Sources */,
+				1662DCAD1C099B4300FB6007 /* UIView+Extension.m in Sources */,
 				16B08D2F1C049284008319B1 /* AppDelegate.m in Sources */,
 				16B08D2C1C049284008319B1 /* main.m in Sources */,
 				16B08D601C0492CA008319B1 /* UIButton+Block.m in Sources */,
@@ -432,6 +444,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = category/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangyong.category.category;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -443,6 +456,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = category/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangyong.category.category;
 				PRODUCT_NAME = "$(TARGET_NAME)";

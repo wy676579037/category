@@ -23,6 +23,7 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     
     [self.touchDownActionBlockBtn addTouchDownActionBlock:^(UIButton *btn) {
@@ -36,6 +37,7 @@
     [self.imageView addActionBolck:^(UIImageView *imageView) {
         NSLog(@"UIImageView Block");
     }];
+    
 }
 
 - (void)didReceiveMemoryWarning {

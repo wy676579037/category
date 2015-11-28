@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -32,16 +33,71 @@
                                     <constraint firstAttribute="width" constant="240" id="xYp-lN-NTu"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ldo-d0-yki" customClass="WYUIview">
+                                <rect key="frame" x="32" y="275" width="256" height="128"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="248" id="efk-ht-tWF"/>
+                                    <constraint firstAttribute="height" constant="128" id="sGQ-xE-pB0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomBoard">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                                        <color key="value" red="0.086274509799999996" green="0.54901960780000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomPadding">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftBoard">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="leftColor">
+                                        <color key="value" red="1" green="0.84296392990000002" blue="0.28167996940000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rightBoard">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="rightColor">
+                                        <color key="value" red="1" green="0.84296392990000002" blue="0.28167996940000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="topBoard">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                                        <color key="value" red="0.086274509799999996" green="0.54901960780000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="efk-ht-tWF"/>
+                                    </mask>
+                                </variation>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="PQ2-D4-yDf" firstAttribute="top" secondItem="BCN-SK-ytf" secondAttribute="bottom" constant="8" id="BKf-GS-LsU"/>
                             <constraint firstItem="PQ2-D4-yDf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DA5-WA-Nmk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ldo-d0-yki" secondAttribute="trailing" constant="16" id="Ixw-TN-3mW"/>
+                            <constraint firstItem="Ldo-d0-yki" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RPU-db-hbv"/>
                             <constraint firstItem="W2f-g5-r47" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="fhV-fm-n34"/>
                             <constraint firstItem="BCN-SK-ytf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lBZ-8M-Zim"/>
                             <constraint firstItem="W2f-g5-r47" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ls1-xp-Pfv"/>
+                            <constraint firstItem="Ldo-d0-yki" firstAttribute="top" secondItem="PQ2-D4-yDf" secondAttribute="bottom" constant="35" id="mXi-h6-a9J"/>
                             <constraint firstItem="BCN-SK-ytf" firstAttribute="top" secondItem="W2f-g5-r47" secondAttribute="bottom" constant="4" id="pFJ-PB-4XU"/>
+                            <constraint firstItem="Ldo-d0-yki" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="qvQ-N0-bRw"/>
+                            <constraint firstItem="Ldo-d0-yki" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rl4-BE-1BK"/>
+                            <constraint firstItem="Ldo-d0-yki" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wPf-mk-A4Y"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="RPU-db-hbv"/>
+                                <exclude reference="qvQ-N0-bRw"/>
+                                <exclude reference="wPf-mk-A4Y"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
